@@ -164,7 +164,7 @@ h6 { margin: 0; font-size: 0.7rem; }
 
 .welcome-video-container, .welcome-message {
     width: 50%;
-    min-width: 200px;
+    min-width: 260px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -190,7 +190,7 @@ h6 { margin: 0; font-size: 0.7rem; }
     border-radius: 15px;
     outline: none;
     border: none;
-    padding: 0 50px 0 50px;
+    padding: 10px 50px 10px 50px;
 }
 
 /*************************** schedule ************************************/
@@ -260,7 +260,7 @@ h6 { margin: 0; font-size: 0.7rem; }
     color:var(--firt-color);
     font-size: 2.5rem;
     padding-bottom: 60px;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .preach-videos {
