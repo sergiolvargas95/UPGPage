@@ -1,0 +1,89 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu a {
+    padding: 0 1rem;
+}
+
+.menu a:last-child{
+    padding-right: 0;
+}
+
+.menu a:hover {
+    background-color: transparent;
+}
+
+.live-button {
+    display: block;
+    margin-right: 20px;
+    background-color: var(--red-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.welcome-message h2 {
+    font-size: 2rem;
+}
+
+.welcome-video {
+    width: 600px;
+    height: 400px;
+}
+
+.schedule-title h3 {
+    font-size: 3rem;
+}
+
+.servicios h4, .servicios p {
+    font-size: 1.8rem;
+}
+
+.information-container h3 {
+    font-size: 5.5rem;
+}
+
+.information-container p {
+    padding: 100px;
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-bottom: 0;
+}
