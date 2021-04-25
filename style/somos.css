@@ -1,0 +1,322 @@
+/**************************Custom Properties**********************/
+:root {
+    --firt-color: #bee440;
+    --white: #ffffff;
+    --second-color: #1cb5f7;
+    --red-color: #f54b4b;
+    --black: #000;
+    --font: "roboto";
+    --max-width: 100%;
+    --header-height: 4rem;
+    --max-width: 1200px;
+    --header-height: 6rem;
+}
+
+/******************************* Reset **************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+*,
+*::after,
+*::before { box-sizing: inherit; }
+
+html { font-size: 62.5%; }
+
+body {
+    overflow-x: hidden;
+    color:var(--black);
+    width: 100%;
+}
+
+a {
+    color:var(--white);
+    transition: all 0.5s ease-out;
+}
+
+h1 { margin: 0; font-size: 2.5rem; font-weight: normal; text-shadow: 1px 2px 40px var(--black); text-align: center;}
+h2 { margin: 0; font-size: 1.5rem; }
+h3 { margin: 0; font-size: 1.25rem; }
+h4 { margin: 0; font-size: 1rem; }
+h5 { margin: 0; font-size: 0.85rem; }
+h6 { margin: 0; font-size: 0.7rem; }
+
+/*************************** Utilities ************************************/
+/*************************** componentes ************************************/
+.menu-btn {
+    background-color: var(--second-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn svg {
+    fill: var(--white);
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    bottom: var(--header-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    background-color: var(--second-color);
+    pointer-events: none;
+    transition: opacity .5s ease;
+}
+
+.menu a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white)
+}
+
+.menu.is-active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu a:hover {
+    background-color: var(--red-color);
+
+}
+
+.live-button {
+    display: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+
+.none {
+    display: none;
+}
+/*************************** menu ************************************/
+
+.header {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--second-color);
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo a img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+/************** HeroImage ************/
+
+.hero-image{
+    width: 100%;
+    min-height: 318px;
+    min-width: 200px;
+    background-image: url('../assets/w.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+/************** introduction ************/
+.title-container {
+    margin-top: 20px;
+}
+.title-container h2{
+    margin: 0px 30px 0px 30px;
+    font-size: 2rem;
+    font-weight: 550;
+    text-align: center;
+    color:var(--second-color);
+    border-bottom: 5px solid var(--firt-color);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+.informacion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.informacion-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.informacion-contenido h3 {
+    color: var(--firt-color);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid var(--second-color);
+    font-size: 2rem;
+}
+
+.informacion-contenido p {
+    margin: 30px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.pastors-container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/************** pastors information *********/
+
+.pastors-img {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/pastores.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    order: 2
+}
+
+.pastors-information h3 {
+    color: var(--second-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pastors-information p {
+    font-size: 1rem;
+    text-align: justify
+}
+
+/*************************** contact me *******************************/
+.container-contact {
+    width: 100%;
+    height: auto;
+    background-color: var(--second-color);
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-cards {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    margin: 50px 30px 50px 30px;
+    background-color: var(--firt-color);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-cards a img{
+    width: 100px;
+    height: 100px;
+}
+
+.contact-cards h5{
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-bottom: var(--header-height);
+    width: 100%;
+    height: 34px;
+    color: var(--black);
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--firt-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-bottom: var(--header-height);
+    width: 100%;
+    height: 34px;
+    color: var(--black);
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--firt-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}

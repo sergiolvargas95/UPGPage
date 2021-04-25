@@ -1,0 +1,103 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu a {
+    padding: 0 1rem;
+}
+
+.menu a:last-child{
+    padding-right: 0;
+}
+
+.menu a:hover {
+    background-color: transparent;
+}
+
+.live-button {
+    display: block;
+    margin-right: 20px;
+    background-color: var(--red-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.title-container h2{
+    margin: 0px 200px 0px 200px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.informacion-contenido {
+    width: 40%;
+}
+
+.informacion-contenido h3 {
+    font-size: 2.5rem;
+}
+
+.informacion-contenido p {
+    font-size: 1.5rem;
+}
+
+.pastors-container {
+    flex-direction: row;
+    margin: 200px 100px 60px 100px
+}
+
+.pastors-information {
+    width: 50%;
+    margin: 0 100px 0 20px;
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 600px;
+}
+
+.pastors-information p {
+    font-size: 1.5rem;
+}
+
+.pastors-img {
+    margin: 0 20px 0 100px;
+    height: 600px;
+    width: 50%;
+}
+
+footer {
+    margin-bottom: 0;
+}
