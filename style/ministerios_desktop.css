@@ -1,0 +1,80 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu a {
+    padding: 0 1rem;
+}
+
+.menu a:last-child{
+    padding-right: 0;
+}
+
+.menu a:hover {
+    background-color: transparent;
+}
+
+.live-button {
+    display: block;
+    margin-right: 20px;
+    background-color: var(--red-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ministeries {
+    margin: 10px 150px 10px 150px;
+}
+
+.ministeries-information img{
+    order:0;
+}
+
+.ministeries-information {
+    flex-direction: row;
+}
+
+.ministerie-container h2 {
+    font-size: 2.5rem;
+}
+
+.ministeries-information p{
+    font-size: 2rem;
+    margin: 30px
+}
+
+footer {
+    margin-bottom: 0;
+}

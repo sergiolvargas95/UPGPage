@@ -10,7 +10,6 @@
 
     d.addEventListener("click", e => {
         if(!e.target.matches(".menu a")) return false;
-        
         $btnMenu.firstElementChild.classList.remove("none");
         $btnMenu.lastElementChild.classList.add("none");
         $menu.classList.remove("is-active");

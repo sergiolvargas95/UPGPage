@@ -44,6 +44,37 @@ h4 { margin: 0; font-size: 1rem; }
 h5 { margin: 0; font-size: 0.85rem; }
 h6 { margin: 0; font-size: 0.7rem; }
 
+.animadoDer, .animadoIzq {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacionDer {
+    animation:mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animacionIzq {
+    animation:mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda {
+    0% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /*************************** Utilities ************************************/
 /*************************** componentes ************************************/
 .menu-btn {
@@ -136,7 +167,7 @@ h6 { margin: 0; font-size: 0.7rem; }
     width: 100%;
     min-height: 318px;
     min-width: 200px;
-    background-image: url('../assets/quierenes_somos.jpeg');
+    background-image: url('../assets/ministerios.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -150,84 +181,52 @@ h6 { margin: 0; font-size: 0.7rem; }
     font-size: 3.5rem;
 }
 
-/************** introduction ************/
-.title-container {
-    margin-top: 20px;
-}
-.title-container h2{
-    margin: 0px 30px 0px 30px;
-    font-size: 2rem;
-    font-weight: 550;
-    text-align: center;
-    color:var(--second-color);
-    border-bottom: 5px solid var(--firt-color);
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-    margin-bottom: 30px;
-}
-
-.informacion-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.informacion-contenido {
+/*************************** ministerios *******************************/
+.ministeries {
+    margin: 10px 30px 10px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 200px;
 }
 
-.informacion-contenido h3 {
-    color: var(--firt-color);
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-    border-bottom: 3px solid var(--second-color);
-    font-size: 2rem;
+.ministeries-information img{
+    order:1;
 }
 
-.informacion-contenido p {
-    margin: 30px;
-    font-size: 1.1rem;
+.ministerie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0 40px 0;
+}
+
+.ministeries-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ministerie-container h2 {
+    font-size: 1.25rem;
+    padding-bottom: 10px
+}
+
+.ministeries-information img {
+    padding: 10px
+}
+
+.ministeries-information p{
     text-align: justify;
 }
 
-.pastors-container {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-/************** pastors information *********/
 
-.pastors-img {
-    margin-top: 20px;
-    width: 300px;
-    height: 300px;
-    background-image: url('../assets/pastores.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    order: 2
-}
 
-.pastors-information h3 {
-    color: var(--second-color);
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.pastors-information p {
-    font-size: 1rem;
-    text-align: justify
-}
+
 
 /*************************** contact me *******************************/
 .container-contact {
@@ -275,16 +274,3 @@ footer {
     font-weight: bold;
     font-size: 1.1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
